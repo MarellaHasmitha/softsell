@@ -1,0 +1,12 @@
+/* Import global styles */
+@import './styles/GlobalStyles.css';
+
+/* Import utility classes */
+@import './styles/Utilities.css';
+
+/* Import animations */
+@import './styles/Animations.css';
+
+/* Import component-specific styles */
+@import './components/HeroSection.css';
+@import './components/Button.css';

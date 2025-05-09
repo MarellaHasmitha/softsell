@@ -1,0 +1,136 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background: linear-gradient(90deg, #0b4d95, #0056b3);
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 100vw;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Left Section - Logo & Navigation Links */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjusted spacing */
+}
+
+/* Logo & Company Name */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  color: white;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Company Name */
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 14px; /* Reduced spacing between items */
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 6px 10px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #094869;
+  transform: scale(1.05);
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  margin-left: 5px; /* Reduce space from links */
+  padding: 6px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(15, 14, 14, 0.2);
+  color: #1395ed;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background: #121212;
+  color: #280cdf;
+}
+
+.navbar.dark-mode {
+  background: linear-gradient(90deg, #03045e, #023e8a);
+}
+
+/* Ensure all text visibility */
+.dark-mode h1,
+.dark-mode p {
+  color: #ffffff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .left-section {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .dark-mode-toggle {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+}

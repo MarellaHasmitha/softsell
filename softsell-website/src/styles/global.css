@@ -1,0 +1,19 @@
+/* Light & Dark Theme */
+.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,76 @@
+/* Hero Section */
+.hero-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f3f4f6, #e3e7ed); /* Light background */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Content */
+.hero-section-content {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* Animated Heading */
+.hero-section-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  background-image: linear-gradient(to right, #2563eb, #7e22ce);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero-section-content h1:hover {
+  color: white;
+}
+
+/* Subtitle */
+.hero-section-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Call-to-Action Button */
+.get-quote-button {
+  margin-top: 25px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #2563eb, #7e22ce);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.get-quote-button:hover {
+  background: linear-gradient(90deg, #0056b3, #8b5cf6);
+  transform: scale(1.05);
+}
+
+/* Button Click Effect */
+.get-quote-button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section-content p {
+    font-size: 1.1rem;
+  }
+
+  .get-quote-button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,214 @@
+/* General Section Styling */
+.why-choose-us {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f3f4f6, #dde1e7);
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Decorative Background Animation */
+  .why-choose-us::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(52, 152, 219, 0.2);
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    animation: floating 6s infinite alternate ease-in-out;
+  }
+  
+  .why-choose-us::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(231, 76, 60, 0.2);
+    border-radius: 50%;
+    bottom: -80px;
+    right: -80px;
+    animation: floating 8s infinite alternate ease-in-out;
+  }
+  
+  @keyframes floating {
+    from {
+      transform: translateY(10px);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Steps Container */
+  .why-choose-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  /* Individual Step Cards */
+  .why-choose-us-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: slideUp 1.2s ease-in-out;
+    position: relative;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .why-choose-us-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon Styling */
+  .icon-wrapper {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    font-size: 45px;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: bounceIcon 1.8s infinite alternate ease-in-out;
+  }
+  
+  @keyframes bounceIcon {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-7px);
+    }
+  }
+  
+  /* Specific Icons */
+  .quality-icon {
+    background: #d86bbb;
+  }
+  
+  .support-icon {
+    background: #2ecc71;
+  }
+  
+  .value-icon {
+    background: #f39c12;
+  }
+  
+  .security-icon {
+    background: #e74c3c;
+  }
+  
+  /* Icon Hover Effects */
+  .quality-icon:hover {
+    background: #b020a1;
+    transform: scale(1.1);
+  }
+  
+  .support-icon:hover {
+    background: #23a164;
+    transform: scale(1.1);
+  }
+  
+  .value-icon:hover {
+    background: #d68710;
+    transform: scale(1.1);
+  }
+  
+  .security-icon:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .why-choose-us-item {
+      width: 240px;
+      padding: 25px;
+    }
+  
+    .icon-wrapper {
+      width: 70px;
+      height: 70px;
+      font-size: 35px;
+    }
+  
+    .why-choose-us h2 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .why-choose-us-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .why-choose-us-item {
+      width: 90%;
+    }
+  
+    .icon-wrapper {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+    }
+  }
+  /* General Section Styling */
+.why-choose-us {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f3f4f6, #dde1e7);
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Remove Decorative Background Animations */
+  .why-choose-us::before,
+  .why-choose-us::after {
+    display: none;
+  }
+  .why-choose-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px; /* Increased spacing */
+    padding-bottom: 10px; /* Optional extra spacing */
+    color: #333;
+  }

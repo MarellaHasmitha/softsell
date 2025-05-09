@@ -1,0 +1,153 @@
+/* Contact Form Section */
+.contact-form-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #eef2f3, #d6dce5);
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  animation: slideUp 1.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Contact Header */
+.contact-form-section h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.input-field {
+  width: 100%;
+  text-align: left;
+}
+
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Focus Effects */
+.input-field input:focus,
+.input-field textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Error Messages */
+.error {
+  color: #e63946;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.submit-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .contact-form-section h2 {
+    font-size: 2.4rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-form-section h2 {
+    font-size: 2rem;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+  }
+}
