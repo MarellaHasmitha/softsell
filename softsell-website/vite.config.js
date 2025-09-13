@@ -3,17 +3,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000, // fine for local dev
-    open: true  // auto opens browser
-  },
+  base: '/', // ensures all asset URLs are correct on Vercel
   build: {
-    outDir: 'dist', // Vercel expects production build in /dist
+    outDir: 'dist', // production build output folder
     sourcemap: false
   },
   resolve: {
     alias: {
-      '@': '/src' // allows cleaner imports like "@/components/Button"
+      '@': '/src' // optional: allows clean imports like "@/components/Navbar"
     }
   }
 })
